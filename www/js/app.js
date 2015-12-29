@@ -1,6 +1,5 @@
   	 function playVideo(){
-      //window.plugins.streamingMedia.playVideo("http://80.77.157.70/abc/hd.m3u8");
-      var videoUrl = "http://80.77.157.70/abc/hd.m3u8";
+      var videoUrl = "http://80.77.157.70/abc/model.m3u8";
       // Just play a video
       //window.plugins.streamingMedia.playVideo(videoUrl);
       // Play a video with callbacks
