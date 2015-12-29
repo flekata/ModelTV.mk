@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-  <title>Bla bla TV</title>
+  <title>Model TV</title>
   <link href="lib/ionic/css/ionic.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -27,7 +27,7 @@
   todoApp.factory('todoFactory',function($http){
     var factory = [];
     factory.getTodos = function(){
-      return $http.get("http://cors.io/?u=http://blabla.mk/feed/");
+      return $http.get("http://cors.io/?u=http://model.mk/feed/");
     }
     return factory;
   });
@@ -52,7 +52,7 @@
 
   //controler to play the stream. -NOT TESTED
   todoApp.controller('playVideo', function ($scope) {
-    $scope.playVideo = "http://80.77.157.70/abc/hd.m3u8";
+    $scope.playVideo = "http://80.77.157.70/abc/model.m3u8";    
     $scope.options = {
       successCallback: function() {
         console.log("Video was closed without error.");
@@ -69,7 +69,7 @@
 </script>
 <div class="bar bar-header bar-light">
   <a href="index.html"><i class="icon ion-arrow-left-c larger"></i></a>
-  <h1 class="title">Bla bla TV</h1>
+  <h1 class="title">Model TV</h1>
 </div>
     <div class="bar bar-subheader item-input-inset">
       <label class="item-input-wrapper">
@@ -82,7 +82,7 @@
     <div ng-controller="todos" class="list" style="padding-top: 8%">
       <div class="list card" ng-repeat="todo in todos | filter:search" >
         <div class="item item-avatar" ng-click="openLink(todo.link)" >
-          <img src="Bla-Bla-Logo-1.png">
+          <img src="Model-Logo.png">
           <h2>{{todo.title}}</h2>
           <p>{{todo.pubDate | limitTo:25 }}</p>
         </div>
